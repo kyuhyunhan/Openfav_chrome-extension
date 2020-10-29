@@ -1,0 +1,1 @@
+#openfav_chrome-extension

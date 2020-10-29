@@ -1,0 +1,6 @@
+{
+	"name" : "openfav",
+	"version" : "1.0",
+	"description" : "Quicky open favorite pages on new tab by specified HOTKEYS", 
+	"manifest_version" : 2
+}
