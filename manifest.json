@@ -1,6 +1,27 @@
 {
-	"name" : "openfav",
+	"name" : "Openfav",
 	"version" : "1.0",
 	"description" : "Quicky open favorite pages on new tab by specified HOTKEYS", 
+	"background" : {
+		"scripts": ["background.js"],
+		"persistent" : false
+	},
+	"permissions": ["declarativeContent"],
+	"browser_action": {
+      "default_popup": "popup.html",
+	  "default_title": "Openfav",
+	  "default_icon": {
+		"16": "images/purplestar_16.png",
+		"32": "images/purplestar_32.png",
+		"48": "images/purplestar_48.png",
+		"128": "images/purplestar_128.png"
+	  }
+    },
+	"icons": {
+		"16": "images/purplestar_16.png",
+		"32": "images/purplestar_32.png",
+		"48": "images/purplestar_48.png",
+		"128": "images/purplestar_128.png"
+	},
 	"manifest_version" : 2
 }

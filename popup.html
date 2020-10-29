@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			.description {
+				border-bottom: 1px solid #979ca0;
+				padding: 5px 5px 5px 5px;
+				background: #f5f5f5;
+			}
+		</style>
+	</head>
+	<body style="width:350px">
+		<h3>Openfav</h3>
+		<div class="description">
+			Mac : cmd + control + num <br>
+			Win : ctrl + shift + num <br>
+			('editing' will be updated in v1.1 ...)
+		</div>
+		<div id="favs-container">
+			<table id="favs">
+				<tbody>
+					<tr>
+						<td>
+							<span class="favs-header-text">Command</span>
+						</td>
+						<td>
+							<span class="favs-header-text">URL</span>
+						</td>
+					</tr>
+				</tbody>
+				<tr class="fav-template-instance" style="display: none;">
+					<td>
+						(numbering)
+					</td>
+					<td class="fav-urls">
+						<input type="text" class="urls" spellcheck="false" placeholder="url">
+					</td>
+					<td class="fav-remove">
+						<input type="button" class="fav-remove-btn" value="x">
+					</td>
+				</tr>
+				<tr class="fav-template-instance">
+					<td>
+						(numbering)
+					</td>
+					<td class="fav-urls">
+						<input type="text" class="urls" spellcheck="false" placeholder="url">
+					</td>
+					<td class="fav-remove">
+						<input type="button" class="fav-remove-btn" value="x">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<button id="addFavBtn">Add</button>
+		<button id="saveChanges">Save</button>
+		<script src="popup.js"></script>
+	</body>
+</html>
