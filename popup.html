@@ -9,7 +9,7 @@
 			}
 		</style>
 	</head>
-	<body style="width:350px">
+	<body style="width:250px">
 		<h3>Openfav</h3>
 		<div class="description">
 			Mac : cmd + control + num <br>
@@ -19,51 +19,59 @@
 		<div id="favs-container">
 			<table id="favs">
 				<tbody>
-					<th>
+					<tr style="text-align:left">
 						<td>
-							<span class="favs-header-text">Command</span>
+							<span class="favs-header-text">Number</span>
 						</td>
 						<td>
 							<span class="favs-header-text">URL</span>
 						</td>
-					</th>
-					<tr class="fav-template-instance">
-						<td>
-							(numbering)
+					</tr>
+					<tr class="fav-template-intance">
+						<td style="text-align:center">
+							1
 						</td>
 						<td class="fav-urls">
 							<input type="text" class="urls" spellcheck="false" placeholder="url">
 						</td>
-						<td class="fav-remove">
-							<input type="button" class="fav-remove-btn" value="x">
+					</tr>
+					<tr class="fav-template-instance">
+						<td style="text-align:center">
+							2
+						</td>
+						<td class="fav-urls">
+							<input type="text" class="urls" spellcheck="false" placeholder="url">
+						</td>
+					</tr>
+					<tr class="fav-template-instance">
+						<td style="text-align:center">
+							3
+						</td>
+						<td class="fav-urls">
+							<input type="text" class="urls" spellcheck="false" placeholder="url">
+						</td>
+					</tr>
+					<tr class="fav-template-instance">
+						<td style="text-align:center">
+							4
+						</td>
+						<td class="fav-urls">
+							<input type="text" class="urls" spellcheck="false" placeholder="url">
+						</td>
+					</tr>
+					<tr class="fav-template-instance">
+						<td style="text-align:center">
+							5
+						</td>
+						<td class="fav-urls">
+							<input type="text" class="urls" spellcheck="false" placeholder="url">
 						</td>
 					</tr>
 				</tbody>
-<!--
-				<tr class="fav-template-instance" style="display: none;">
-					<td>
-						(numbering)
-					</td>
-					<td class="fav-urls">
-						<input type="text" class="urls" spellcheck="false" placeholder="url">
-					</td>
-					<td class="fav-remove">
-						<input type="button" class="fav-remove-btn" value="x">
-					</td>
-				</tr>
-				<tr class="fav-template-instance">
-					<td>
-						(numbering)
-					</td>
-					<td class="fav-urls">
-						<input type="text" class="urls" spellcheck="false" placeholder="url">
-					</td>
-					<td class="fav-remove">
-						<input type="button" class="fav-remove-btn" value="x">
-					</td>
-				</tr>
--->
 			</table>
+<!--
+Add 기능 추가 시 활용 가능한 <template> / 삭제 버튼도 추가되어 있음
+
 			<template id="fav-template">
 				<tr class="fav-template-instance">
 					<td>
@@ -77,8 +85,9 @@
 					</td>
 				</tr>
 			</template>
+-->
 		</div>
-		<button id="addFavBtn">Add</button>
+		<!--  <button id="addFavBtn">Add</button>  -->
 		<button id="saveChanges">Save</button>
 		<script src="popup.js"></script>
 	</body>
