@@ -19,15 +19,27 @@
 		<div id="favs-container">
 			<table id="favs">
 				<tbody>
-					<tr>
+					<th>
 						<td>
 							<span class="favs-header-text">Command</span>
 						</td>
 						<td>
 							<span class="favs-header-text">URL</span>
 						</td>
+					</th>
+					<tr class="fav-template-instance">
+						<td>
+							(numbering)
+						</td>
+						<td class="fav-urls">
+							<input type="text" class="urls" spellcheck="false" placeholder="url">
+						</td>
+						<td class="fav-remove">
+							<input type="button" class="fav-remove-btn" value="x">
+						</td>
 					</tr>
 				</tbody>
+<!--
 				<tr class="fav-template-instance" style="display: none;">
 					<td>
 						(numbering)
@@ -50,7 +62,21 @@
 						<input type="button" class="fav-remove-btn" value="x">
 					</td>
 				</tr>
+-->
 			</table>
+			<template id="fav-template">
+				<tr class="fav-template-instance">
+					<td>
+						(numbering)
+					</td>
+					<td class="fav-urls">
+						<input type="text" class="urls" spellcheck="false" placeholder="url">
+					</td>
+					<td class="fav-remove">
+						<input type="button" class="fav-remove-btn" value="x">
+					</td>
+				</tr>
+			</template>
 		</div>
 		<button id="addFavBtn">Add</button>
 		<button id="saveChanges">Save</button>
