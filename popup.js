@@ -1,6 +1,15 @@
 let addFavBtn = document.getElementById('addFavBtn');
 let favs = document.getElementById('favs');
 
+saveChanges.onclick = function() {
+	let urls = document.getElementsByClassName('urls')
+	Array.prototype.forEach.call(urls, function(url, i) {
+		i = i + 1
+		chrome.storage.sync.set({i:url}, function() {
+			console.log(i + ' is set to ' + url.value)
+		})
+	})
+}
 
 /*
 추가 기능 함수. 정상 작동. 추후 기능 추가 시 활용
