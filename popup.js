@@ -1,12 +1,26 @@
+$(document).ready(function() {
+	let inputNodes = document.getElementsByClassName('urls')
+	for(let i=0;i<5;i++){
+		chrome.storage.local.get(['i'], function(result) {
+			console.log(i)
+			console.log(result.i)
+			inputNodes[i].value = result.i
+		})
+	}
+})
+
 let addFavBtn = document.getElementById('addFavBtn');
 let favs = document.getElementById('favs');
 
 saveChanges.onclick = function() {
 	let urls = document.getElementsByClassName('urls')
+	console.log(Array.isArray(urls))
+	var tmp
 	Array.prototype.forEach.call(urls, function(url, i) {
-		i = i + 1
-		chrome.storage.sync.set({i:url}, function() {
-			console.log(i + ' is set to ' + url.value)
+		tmp = url.value
+		console.log(tmp)
+		chrome.storage.local.set({i:tmp}, function() {
+			console.log(i + ' is set to ' + tmp)
 		})
 	})
 }
